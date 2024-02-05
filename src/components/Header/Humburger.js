@@ -8,11 +8,11 @@ import { useSetActiveProviderHumb } from '../../provider/HumbProvider';
 export const Humburger = () => {
     // Using custom hooks to get and set the active state from a provider
     const activeHumb = useActiveProviderHumb();
-    const setActuveHumb = useSetActiveProviderHumb();
+    const setActiveHumb = useSetActiveProviderHumb();
 
     // Handler function to set the active state to true when the humburger is clicked
     const activeHumburgerHandler = () => {
-        setActuveHumb(true);
+        setActiveHumb(true);
     }
 
     return (

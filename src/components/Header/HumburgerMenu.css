@@ -1,0 +1,25 @@
+.humburger-menu {
+    width: 65%;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    animation: humbMenuAni .3s linear 1;
+}
+
+@keyframes humbMenuAni {
+    0%{
+        width: 0;
+    }
+}
+
+.humburger-menu-container {
+    width: 95%;
+    padding: 4% 0;
+    margin: auto;
+}
+
+#close-icon {
+    width: 25px;
+    height: 25px;
+}

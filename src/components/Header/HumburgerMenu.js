@@ -1,12 +1,27 @@
 import React from 'react';
-import "./HumburgerMenu.css";
+import "./HumburgerMenu.css"; 
+import { GrClose } from "react-icons/gr";
 
-const humburgerMenu = () => {
+const humburgerMenu = (props) => {
+
+  // Destructuring props to extract 'activeHumb' and 'setActiveHumb'
+  const { activeHumb, setActiveHumb } = props;
+
+  // Function to close the hamburger menu
+  const closeHumbMenu = () => {
+    setActiveHumb(false);
+  }
+
+  // Rendered JSX for the component
   return (
-    <div className="humburgerMenu">
-      <h1>hellpo</h1>
+    <div className="humburger-menu">
+      <div className="humburger-menu-container">
+        <GrClose id='close-icon' onClick={closeHumbMenu} />
+        <div className="humburger-menu-flex">
+        </div>
+      </div>
     </div>
   )
 }
 
-export default humburgerMenu;
+export default humburgerMenu; 

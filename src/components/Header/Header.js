@@ -7,11 +7,10 @@ import HumburgerMenu from "./HumburgerMenu";
 import { useActiveProviderHumb } from '../../provider/HumbProvider';
 import { useSetActiveProviderHumb } from '../../provider/HumbProvider';
 
-
 export const Header = () => {
 
     const activeHumb = useActiveProviderHumb();
-    const setActuveHumb = useSetActiveProviderHumb();
+    const setActiveHumb = useSetActiveProviderHumb();
 
     const [scrollHeader, setScrollHeader] = useState(false);
 
@@ -26,7 +25,7 @@ export const Header = () => {
 
     return (
         <>
-            <div className="header" style={scrollHeader ? {position:"fixed"} : {position:"inherit"}}>
+            <div className="header" style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
                 <div className="header-container">
                     <div className="header-flex">
                         <div className="nav-bar">
@@ -44,7 +43,7 @@ export const Header = () => {
             </div>
             {
                 activeHumb && (
-                    <HumburgerMenu />
+                    <HumburgerMenu activeHumb={activeHumb} setActiveHumb={setActiveHumb} />
                 )
             }
         </>
