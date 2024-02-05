@@ -1,6 +1,7 @@
 :root {
   --main-color: #23242a;
   --text-color: blue;
+  --hover-color: rgb(67, 67, 250);
 }
 
 * {

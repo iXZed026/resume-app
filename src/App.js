@@ -1,12 +1,17 @@
 import React from 'react';
 import "./App.css";
 import { Header } from './components/Header/Header';
+import HumbProvider from './provider/HumbProvider';
+
 
 const App = () => {
   return (
-    <div className='container'>
-      <Header />
-    </div>
+    <HumbProvider>
+      <div className='container'>
+        <Header />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </HumbProvider>
   )
 }
 
