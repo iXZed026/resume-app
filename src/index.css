@@ -1,7 +1,7 @@
 :root {
   --main-color: #23242a;
   --text-color: blue;
-  --hover-color: rgb(67, 67, 250);
+  --hover-color: blue;
 }
 
 * {
@@ -9,7 +9,6 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: white;
 }
 
 body {
@@ -21,8 +20,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-color);
   direction: rtl;
+  color: white;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
