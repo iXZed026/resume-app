@@ -9,8 +9,6 @@ import { AboutUs } from './components/AboutUs/AboutUs';
 import { ContactUs } from './components/ContactUs/ContactUs';
 
 
-
-
 const App = () => {
   return (
     <>

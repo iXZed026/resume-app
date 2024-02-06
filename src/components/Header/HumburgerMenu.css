@@ -1,19 +1,16 @@
-.humburger-back-ground {
+.humb-menu-background {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.738);
+    background-color: rgba(0, 0, 0, 0.541);
     position: fixed;
     top: 0;
-    z-index: 0;
 }
 
 .humburger-menu {
-    width: 65%;
     height: 100vh;
-    background-color: var(--main-color);
-    top: 0;
+    background-color: #15161a;
     animation: humbMenuAni .3s linear 1;
-    border-left: 1px solid var(--text-color);   
-    z-index: 1;
+    border-left: 1px solid var(--text-color);
+    position: relative;
 }
 
 @keyframes humbMenuAni {
@@ -22,14 +19,95 @@
     }
 }
 
+.humb-menu-image {
+    width: 100%;
+    height: 230px;
+    background-image: url('C:\Users\danya\Desktop\Programs\React\resume-app\public\images/1101230.jpg');
+    background-size: cover;
+    margin-bottom: 2%;
+}
+
 .humburger-menu-container {
-    width: 95%;
-    padding: 4% 0;
+    width: 90%;
     margin: auto;
+    padding: 4% 0;
+}
+
+.humburger-menu-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    animation: menuAni 0.4s linear 1;
+}
+
+@keyframes menuAni {
+    0% {
+        transform: translate(300px, 0);
+    }
+}
+
+#nav-link-style {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 15px;
+    padding: 14px 5px;
+}
+
+#nav-link-style:hover {
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#nav-link-style p:hover {
+    transition: 0.2s;
+    color: var(--hover-color);
 }
 
 #close-icon {
     width: 25px;
     height: 25px;
     cursor: pointer;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 4;
+}
+
+#icons-style {
+    width: 22px;
+    height: 22px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:800px) {
+    .humburger-menu {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .humburger-menu {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .humburger-menu {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .humburger-menu {
+        width: 75%;
+    }
+
+    .humb-menu-image {
+        height: 200px;
+    }
 }

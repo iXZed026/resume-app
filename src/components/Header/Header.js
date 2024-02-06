@@ -25,8 +25,9 @@ export const Header = () => {
 
     return (
         <>
-            <div className="header" style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
-                <div className="header-container">
+            <div className="header"
+                style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
+                <div className="header-container" >
                     <div className="header-flex">
                         <div className="nav-bar">
                             <Link to="./Home/Home" id="link-style"><p>خانه</p></Link>
