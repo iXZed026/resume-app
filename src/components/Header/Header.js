@@ -29,10 +29,10 @@ export const Header = () => {
                 <div className="header-container">
                     <div className="header-flex">
                         <div className="nav-bar">
-                            <Link id="link-style"><p>خانه</p></Link>
-                            <Link id="link-style"><p>رزومه های ما</p></Link>
-                            <Link id="link-style"><p>درباره ما</p></Link>
-                            <Link id="link-style"><p>تماس با ما</p></Link>
+                            <Link to="./Home/Home" id="link-style"><p>خانه</p></Link>
+                            <Link to="./Portfolio/Portfolio" id="link-style"><p>رزومه های ما</p></Link>
+                            <Link to="./AboutUs/AboutUs" id="link-style"><p>درباره ما</p></Link>
+                            <Link to="./ContactUs/ContactUs" id="link-style"><p>تماس با ما</p></Link>
                         </div>
                         <div className="logo">
                             <h2><span>R</span>esume</h2><IoNewspaperOutline id='resume-icon' />

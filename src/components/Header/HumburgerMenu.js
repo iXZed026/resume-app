@@ -1,5 +1,5 @@
 import React from 'react';
-import "./HumburgerMenu.css"; 
+import "./HumburgerMenu.css";
 import { GrClose } from "react-icons/gr";
 
 const humburgerMenu = (props) => {
@@ -12,12 +12,13 @@ const humburgerMenu = (props) => {
     setActiveHumb(false);
   }
 
-  // Rendered JSX for the component
   return (
-    <div className="humburger-menu">
-      <div className="humburger-menu-container">
-        <GrClose id='close-icon' onClick={closeHumbMenu} />
-        <div className="humburger-menu-flex">
+    <div className="humburger-back-ground">
+      <div className="humburger-menu">
+        <div className="humburger-menu-container">
+          <GrClose id='close-icon' onClick={closeHumbMenu} />
+          <div className="humburger-menu-flex">
+          </div>
         </div>
       </div>
     </div>
