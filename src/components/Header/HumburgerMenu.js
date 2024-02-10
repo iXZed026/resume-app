@@ -91,6 +91,9 @@ const HumburgerMenu = (props) => {
           </div>
         </div>
       </div>
+      <div className="for-close" onClick={closeHumbMenu}>
+        
+      </div>
     </div>
   )
 }
