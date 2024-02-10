@@ -55,16 +55,16 @@
     padding: 14px 5px;
 }
 
-#nav-link-style:hover {
-    transition: 0.2s;
+
+.nav-link2{
     background-color: rgba(0, 0, 0, 0.295);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    color: var(--hover-color);
 }
 
-#nav-link-style p:hover {
-    transition: 0.2s;
-    color: var(--hover-color);
+.nav-link3{
+    color: white;
 }
 
 #close-icon {
@@ -75,6 +75,11 @@
     top: 1%;
     right: 2%;
     z-index: 4;
+}
+
+#close-icon:hover {
+    transition: .3s;
+    opacity: 0.7;
 }
 
 #icons-style {
