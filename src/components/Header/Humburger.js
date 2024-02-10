@@ -3,7 +3,6 @@ import "./Humburger.css";
 import { useActiveProviderHumb } from '../../provider/HumbProvider';
 import { useSetActiveProviderHumb } from '../../provider/HumbProvider';
 
-// Importing React and other necessary modules
 
 export const Humburger = () => {
     // Using custom hooks to get and set the active state from a provider

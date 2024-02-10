@@ -9,12 +9,9 @@ import { FaUsers } from "react-icons/fa6";
 import { BsTelephoneFill } from "react-icons/bs";
 
 
-const humburgerMenu = (props) => {
-
+const HumburgerMenu = (props) => {
   // Destructuring props to extract 'activeHumb' and 'setActiveHumb'
-  const { activeHumb, setActiveHumb, activeLink, setActiveLink
-  } = props;
-
+  const { activeHumb, setActiveHumb, activeLink, setActiveLink } = props;
 
   // Function to close the hamburger menu
   const closeHumbMenu = (event) => {
@@ -51,9 +48,9 @@ const humburgerMenu = (props) => {
         contactUsFlag: true,
       })
     }
-
   }
 
+  // Event listener for window resize to close the menu if window width is greater than 800
   window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
       setActiveHumb(false)
@@ -98,4 +95,4 @@ const humburgerMenu = (props) => {
   )
 }
 
-export default humburgerMenu; 
+export default HumburgerMenu;

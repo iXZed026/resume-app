@@ -9,24 +9,26 @@ import { useSetActiveProviderHumb } from '../../provider/HumbProvider';
 import { useActiveLinkProvider } from '../../provider/LinkProvider';
 import { useSetActiveLinkProvider } from '../../provider/LinkProvider';
 
-export const Header = () => {
 
+export const Header = () => {
+    // Humburger state and context
     const activeHumb = useActiveProviderHumb();
     const setActiveHumb = useSetActiveProviderHumb();
 
+    // Active link state and context
     const activeLink = useActiveLinkProvider();
     const setActiveLink = useSetActiveLinkProvider();
 
+    // Scroll state
     const [scrollHeader, setScrollHeader] = useState(false);
 
+    // Effect to handle scroll and initial path setting
     useEffect(() => {
-
         if (window.location.pathname !== "/") {
             window.location.pathname = "/"
         }
 
         const scrollHandle = () => {
-
             if (Math.round(window.scrollY <= 0)) {
                 setScrollHeader(false);
             } else {
@@ -37,13 +39,12 @@ export const Header = () => {
         document.addEventListener("scroll", scrollHandle);
 
         return () => {
-            document.addEventListener("scroll", scrollHandle)
+            document.removeEventListener("scroll", scrollHandle)
         }
-
     }, []);
 
+    // Handler for setting active link based on clicked item
     const activeLinkHandler = (event) => {
-
         let dataLink = event.target.getAttribute("data-link");
 
         if (dataLink === "home") {
@@ -75,14 +76,11 @@ export const Header = () => {
                 contactUsFlag: true,
             })
         }
-
     }
-
 
     return (
         <>
-            <div className="header"
-                style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
+            <div className="header" style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
                 <div className="header-container" >
                     <div className="header-flex">
                         <div className="nav-bar">
@@ -98,12 +96,10 @@ export const Header = () => {
                     <Humburger />
                 </div>
             </div>
-            {
-                activeHumb && (
-                    <HumburgerMenu activeHumb={activeHumb} setActiveHumb={setActiveHumb}
-                        activeLink={activeLink} setActiveLink={setActiveLink} />
-                )
-            }
+            {activeHumb && (
+                <HumburgerMenu activeHumb={activeHumb} setActiveHumb={setActiveHumb}
+                    activeLink={activeLink} setActiveLink={setActiveLink} />
+            )}
         </>
     )
 }
