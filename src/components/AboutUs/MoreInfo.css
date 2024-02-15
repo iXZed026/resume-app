@@ -1,0 +1,95 @@
+.moreInfo {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.moreInfo-container {
+    width: 95%;
+    margin: auto;
+    height: 1000px;
+
+}
+
+.moreInfo-flex {
+    display: flex;
+}
+
+.moreInfo-flex h3 {
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 4%;
+    padding: 3% 0;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.moreInfo-flex .personal-information {
+    width: 35%;
+    height: 1000px;
+    background-color: rgb(42, 42, 52);
+    padding: 2% 2%;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 7px var(--text-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: personalAni 1s ease-in-out 1;
+}
+
+@keyframes personalAni {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+}
+
+.personal-information .personal-header {
+    text-align: center;
+}
+
+.personal-information img {
+    width: 40%;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-bottom: 1%;
+}
+
+.personal-information h2 {
+    margin-bottom: 5%;
+}
+
+.personal-information h4 {
+    margin-bottom: 13%;
+    font-size: 15px;
+}
+
+.moreInfo-flex .about-me {
+    width: 65%;
+    height: 1000px;
+    background-color: rgb(49, 49, 59);
+    padding: 2% 2%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 7px var(--text-color);
+}
+
+.moreInfo-flex .about-me h2 {
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 0px 0px 4px var(--text-color);
+    letter-spacing: 1px;
+}
+
+.about-me p {
+    line-height: 33px;
+    font-weight: 400;
+    content: "\A";
+    white-space: pre;
+}
+
+

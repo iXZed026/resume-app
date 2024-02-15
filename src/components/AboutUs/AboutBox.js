@@ -14,7 +14,7 @@ export const AboutBox = (props) => {
         <div className="aboutBox">
             <div className="aboutBox-container">
                 <div className="aboutBox-flex">
-                    <img src={img} alt="image not found" />
+                    <img src={img} alt="image not found" draggable='false'/>
                     <h2 id="fullName">{`${firstName} ${lastName}`}</h2>
                     <h3>{area}</h3>
                     <button src="submit" onClick={moreDetailsHandle}>جزئیات بیشتر</button>
