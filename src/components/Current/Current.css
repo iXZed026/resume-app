@@ -1,0 +1,58 @@
+.current-send {
+    width: 35%;
+    margin: 17% auto;
+    text-align: center;
+    background-color: rgb(24, 24, 33);
+    border-top-left-radius: 10px;
+    animation: sendAni .9s linear 1;
+    border: 1px solid rgba(0, 208, 255, 0.467);
+}
+
+@keyframes sendAni {
+    0%{
+        opacity: 0;
+    }
+}
+
+#line {
+    direction: ltr;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    animation: lineAni 1.8s linear 1;
+}
+
+@keyframes lineAni {
+    0%{
+        width: 0;
+    }
+}
+
+.current-send-container {
+    padding: 2% 1%;
+}
+
+.current-send-flex{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.current-send-flex h3 {
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.848);
+    font-size: 15px;
+}
+
+#checkmark-icon {
+    width: 29px;
+    height: 29px;
+    color: var(--text-color);
+}
+
+@media screen and (max-width:800px) {
+    .current-send {
+        margin-top: 40%;
+        width: 70%;
+    }
+}

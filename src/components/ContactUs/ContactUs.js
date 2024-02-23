@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import "./ContactUs.css";
+import { Loader } from '../Loader/Loader';
+import { Current } from '../Current/Current';
 import emailjs from "emailjs-com";
+
 
 export const ContactUs = () => {
 
@@ -10,11 +13,11 @@ export const ContactUs = () => {
         message: ''
     }]);
 
+    const { name, email, message } = form;
+
     const [loading, setLoading] = useState("noNeed");
 
     const sendEmail = async () => {
-
-        const { name, email, message } = form;
 
         try {
             const params = {
@@ -31,22 +34,23 @@ export const ContactUs = () => {
                 "TqdWTZgjXhPBNdAEr"
             );
 
-            if (response.text === "OK"){
+            if (response.text === "OK") {
                 setLoading(true);
+                setTimeout(() => {
+                    setLoading("noNeed");
+                }, 3500)
             }
 
             console.log('Email sent successfully:', response);
 
         } catch (error) {
-            console.log("Error : ", error);
+            console.log("Error : ", error);     
         }
 
     }
 
     const submitForm = (e) => {
         e.preventDefault();
-
-        const { name, email, message } = form;
 
         if (name.length > 2 && email && message) {
 
@@ -95,7 +99,8 @@ export const ContactUs = () => {
                                         onChange={(e) => setForm({ ...form, message: e.target.value })}
                                     >
                                     </textarea>
-                                    <button type='submit'>Send Message</button>
+                                    <br />
+                                    <button type='submit'>ارسال پیام</button>
                                 </form>
                             </div>
                         </div>
@@ -103,12 +108,14 @@ export const ContactUs = () => {
                 )
             }
             {
-                !loading ? (
-                    <h1>loading...</h1>
-                ) : (
-                    <h1>its ok!</h1>
+                loading === false && (
+                    <Loader />
                 )
-
+            }
+            {
+                loading === true && (
+                    <Current />
+                )
             }
         </>
     )
