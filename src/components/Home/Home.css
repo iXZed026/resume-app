@@ -220,10 +220,6 @@
 
 @media screen and (max-width:800px) {
 
-    .home {
-        overflow-x: hidden;
-    }
-
     .home-flex {
         flex-direction: column;
     }

@@ -80,14 +80,26 @@ export const Header = () => {
 
     return (
         <>
-            <div className="header" style={scrollHeader ? { position: "fixed" } : { position: "inherit" }}>
+            <div className="header" style={scrollHeader ? { position: "fixed", boxShadow: "0 0 7px var(--text-color)" } : { position: "inherit" }}>
                 <div className="header-container" >
                     <div className="header-flex">
                         <div className="nav-bar">
-                            <Link onClick={activeLinkHandler} to="./Home/Home" id="link-style" ><p data-link={"home"} className={activeLink.homeFlag ? "link-active" : ''}>خانه</p></Link>
-                            <Link onClick={activeLinkHandler} to="./Portfolio/Portfolio" id="link-style" ><p data-link={"portfolio"} className={activeLink.portfolioFlag ? "link-active" : ''}>رزومه های ما</p></Link>
-                            <Link onClick={activeLinkHandler} to="./AboutUs/AboutUs" id="link-style" ><p data-link={"aboutUs"} className={activeLink.aboutUsFlag ? "link-active" : ''}>درباره ما</p></Link>
-                            <Link onClick={activeLinkHandler} to="./ContactUs/ContactUs" id="link-style" ><p data-link={"contactUs"} className={activeLink.contactUsFlag ? "link-active" : ''}>تماس با ما</p></Link>
+                            <Link
+                                onClick={activeLinkHandler}
+                                to="./Home/Home"
+                                id="link-style" ><p data-link={"home"} className={activeLink.homeFlag ? "link-active" : ''}>خانه</p></Link>
+                            <Link
+                                onClick={activeLinkHandler}
+                                to="./Portfolio/Portfolio"
+                                id="link-style" ><p data-link={"portfolio"} className={activeLink.portfolioFlag ? "link-active" : ''}>رزومه های ما</p></Link>
+                            <Link
+                                onClick={activeLinkHandler}
+                                to="./AboutUs/AboutUs"
+                                id="link-style" ><p data-link={"aboutUs"} className={activeLink.aboutUsFlag ? "link-active" : ''}>درباره ما</p></Link>
+                            <Link
+                                onClick={activeLinkHandler}
+                                to="./ContactUs/ContactUs"
+                                id="link-style" ><p data-link={"contactUs"} className={activeLink.contactUsFlag ? "link-active" : ''}>تماس با ما</p></Link>
                         </div>
                         <div className="logo">
                             <h2><span>R</span>esume</h2><IoNewspaperOutline id='resume-icon' />

@@ -7,7 +7,8 @@ export const AboutBox = (props) => {
 
     const moreDetailsHandle = () => {
         onInfo(id)
-        setMoreInfo(true)
+        setMoreInfo(true);
+        console.log("More Details loged");
     }
 
     return (

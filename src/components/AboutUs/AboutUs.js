@@ -33,8 +33,8 @@ export const AboutUs = () => {
     توانایی برقراری ارتباط و همکاری فعّال در محیط‌های کار تیمی.
     تعهد به به‌روزرسانی دائمی مهارت‌ها و آگاهی از تغییرات صنعت.`, img: "../images/danyal.png", expertise: 'دانشجو', address: "کرج,فردیس,شهرک 110,گلستان 14غربی,هنر یکم غربی ", gender: 'مرد', workExperience: "به مدت 3 ماه کاراموز در شرکت پردازش اطلاعات نو اندیشان"
     },
-    { id: 2, firstName: "امین", lastName: "قاسمی", yearOfBirth: 1382, area: "Backend", aboutMe: "Lorem ipsum dolor sit amet.", img: "../images/1101238.jpg", expertise: 'دانشجو', address: "فردیس,شهرک 110,گلستان 14غربی,هنر یکم غربی", gender: 'مرد' },
-    { id: 3, firstName: "سارا", lastName: "مرادخانی", yearOfBirth: 1381, area: "Database", aboutMe: "بنده ومن هستم برای کار در اشپز خانه و شستین ظرفا با سال ها تجربه", img: "../images/sara.png", expertise: 'دانشجو', address: "فردیس,شهرک 110,گلستان 14غربی,هنر یکم غربی", gender: 'زن' },
+    // { id: 2, firstName: "امین", lastName: "قاسمی", yearOfBirth: 1382, area: "Backend", aboutMe: "Lorem ipsum dolor sit amet.", img: "../images/1101238.jpg", expertise: 'دانشجو', address: "فردیس,شهرک 110,گلستان 14غربی,هنر یکم غربی", gender: 'مرد' },
+    // { id: 3, firstName: "سارا", lastName: "مرادخانی", yearOfBirth: 1381, area: "Database", aboutMe: "بنده ومن هستم برای کار در اشپز خانه و شستین ظرفا با سال ها تجربه", img: "../images/sara.png", expertise: 'دانشجو', address: "فردیس,شهرک 110,گلستان 14غربی,هنر یکم غربی", gender: 'زن' },
     {
       id: 4, firstName: "اشکان", lastName: "طاهرنیا", yearOfBirth: 1383, area: "Wordpress", aboutMe: "Lorem ipsum dolor sit amet.", aboutMe: `فردی علاقه مند، خلاق و کوشا هستم و سخت و محکم برای رسیدن به اهدافم تلاش میکنم. به دنبال کسب دانش و مهارت های بیشتر در این حوزه می باشم. همچنین دارای روحیه کار تیمی هستم.
 
