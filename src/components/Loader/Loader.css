@@ -1,0 +1,39 @@
+.loading {
+    padding: 12% 0;
+}
+
+.loading-container {
+    width: 100%;
+}
+
+.loading-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loading-border h3 {
+    font-size: 20px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+}
+
+.loader {
+    border: 2px solid rgba(28, 28, 28, 0);
+    border-top: 6px solid var(--text-color);
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    animation: spinAni .8s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spinAni {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

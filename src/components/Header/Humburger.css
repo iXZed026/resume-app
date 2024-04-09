@@ -1,0 +1,42 @@
+.humburger {
+    display: none;
+    height: 45px;
+    top: 13%;
+    border-radius: 10px;
+    row-gap: 22px;
+    padding: 3px 0;
+}
+
+.humburger-container {
+    width: 85%;
+    margin: auto;
+}
+
+.humburger-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    cursor: pointer;
+}
+
+.humburger-flex div {
+    background-color: white;
+    height: 3px;
+}
+
+@media screen and (max-width:800px) {
+    .humburger {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    .humburger {
+        width: 12%;
+    }
+       
+}

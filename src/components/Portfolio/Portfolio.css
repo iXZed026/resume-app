@@ -1,0 +1,22 @@
+.portfolio-box{
+    width: 100%;
+}
+
+.portfolio-box-container{
+    width: 90%;
+    margin: auto;
+}
+
+.television-bg {
+    width: 400px;
+    height: 270px;
+    margin: auto;
+    background-size: cover;
+    background-image: url('../../../public/images/television.png');
+}
+
+
+.television-bg video {
+    width: 96%;
+    margin:2% 2%;
+}

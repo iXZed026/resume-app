@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import HumbProvider from './provider/HumbProvider';
+import { Header } from './components/Header/Header';
+import { Home } from './components/Home/Home';
+import Portfolio from './components/Portfolio/Portfolio';
+import { AboutUs } from './components/AboutUs/AboutUs';
+import { ContactUs } from './components/ContactUs/ContactUs';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <div className="main">
+        <div className="main-container">
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/Home/Home' element={<Home />}></Route>
+            <Route path='/Portfolio/Portfolio' element={<Portfolio />}></Route>
+            <Route path='/AboutUs/AboutUs' element={<AboutUs />}></Route>
+            <Route path='/ContactUs/ContactUs' element={<ContactUs />}></Route>
+          </Routes>
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default App;
